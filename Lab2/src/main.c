@@ -26,6 +26,7 @@ int main()
     printf("\n\n-- push_back ==> 7 --");
     int_vector_push_back(b, 7);//
     printf("\narr[6] ==> %d \ncapacity ==> %zd \nsize ==> %zd\n", b->arr[6], 
+
 int_vector_get_capacity(b), int_vector_get_size(b));//
     printf("\nB = ");//
     for (int i = 0; i < 7; i++)
@@ -34,6 +35,7 @@ int_vector_get_capacity(b), int_vector_get_size(b));//
     }
     int_vector_push_back(b, 7);
     printf("\narr[6] ==> %d \ncapacity ==> %zd \nsize ==> %zd\n", b->arr[6], 
+
 int_vector_get_capacity(b), int_vector_get_size(b));//
     printf("\nB = ");//
     int_vector_set_item(b, 0, 9);
@@ -41,6 +43,7 @@ int_vector_get_capacity(b), int_vector_get_size(b));//
     int_vector_pop_back(b);
     printf("\n-- pop_back --");
     printf("\ncapacity ==> %zd\nsize ==> %zd\n", int_vector_get_capacity(b), 
+
 int_vector_get_size(b));//
     int_vector_shrink_to_fit(b);
     printf("\n-- shrink_to_fit --");

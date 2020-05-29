@@ -1,18 +1,16 @@
 #include <stdio.h>
 
 typedef struct {
-    char str[3];
+    char str[4];
     int num;
 } NumberRepr;
 
-void format(NumberRepr* number)
-{
-    snprintf(number->str, 4, "%3d", number->num);
+void format(NumberRepr* number) {
+    sprintf(number->str, "%4d", number->num);
 }
 
-int main()
-{
-    NumberRepr number = {.num = 1025};
+int main() {
+    NumberRepr number = { .num = 1025 };
     format(&number);
     printf("str: %s\n", number.str);
     printf("num: %d\n", number.num);
