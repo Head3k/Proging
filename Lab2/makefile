@@ -4,7 +4,16 @@ main: src/main.c src/IntVector.c
 	gcc -Wall -o main -I src src/main.c src/IntVector.c
 	tree
 
-test:
+test: src/main.c src/IntVector.c
+	gcc -Wall -o main -I src src/main.c src/IntVector.c
+	tree
+	./main
+	rm -rf main
+	tree
+
+run: src/main.c src/IntVector.c
+	gcc -Wall -o main -I src src/main.c src/IntVector.c
+	tree
 	./main
 
 clean:
