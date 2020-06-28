@@ -3,7 +3,7 @@
 
 typedef struct
 {
-    int *arr;
+    int *array;
     size_t size;
     size_t capacity;
 } IntVector;
