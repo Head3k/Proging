@@ -102,7 +102,7 @@ int int_vector_resize(IntVector *v, size_t new_size){ // resize vector
         v->capacity = new_size;                 // capacity = new size
     }                                           //
     if (v->size > new_size){                    // if size > new size
-        v->size;                                //
+        v->size = new_size;                                //
     }                                           // size = new size
     return 0;                                   //
 }
